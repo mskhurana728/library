@@ -6,16 +6,18 @@ const form = document.querySelector(".form");
 const button = document.querySelector("button");
 
 
-function Book(tittle, author, pages ) {
-    this.tittle = tittle;
-    this.author = author;
-    this.pages = pages;
-   
-    this.info = function () {
-        return (` Tittle: ${tittle} 
+class Book {
+    constructor(tittle, author, pages) {
+        this.tittle = tittle;
+        this.author = author;
+        this.pages = pages;
+
+        this.info = function () {
+            return (` Tittle: ${tittle} 
         Author: ${author} 
         Pages: ${pages} 
          `);
+        }
     }
 }
 
@@ -83,7 +85,7 @@ form.addEventListener("submit", (e) => {
     let tittlevalue = document.querySelector("#tittle").value;
     let authorvalue = document.querySelector("#author").value;
     let pagesvalue = document.querySelector("#pages").value;
-   
+
 
     let newBook = new Book(tittlevalue, authorvalue, pagesvalue);
     addBookToLibrary(newBook);
