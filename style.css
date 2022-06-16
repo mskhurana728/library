@@ -1,11 +1,11 @@
-input{
-  display: block;
-  margin-bottom: 1rem;
+input {
+	display: block;
+	margin-bottom: 1rem;
 }
-.addBook{
-  margin: 1rem;
-  margin-bottom: 4rem;
+.addBook {
+	margin: 1rem;
+	margin-bottom: 4rem;
 }
-.form{
-  display: none;
+.form {
+	display: none;
 }
